@@ -1,19 +1,23 @@
 package com.company;
 
-import java.io.IOException;
-import java.util.Scanner;
+/* Program to convert entered seconds into days,hours,minutes and seconds  3,07,58,400 */
 
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        table a = new table();
 
-        System.out.println(a.var);
+    public static void main(String[] args){
 
-        a.printTable();
+        Time a = new Time();
 
 
+
+        a.printOnlyDays();
+        a.printOnlyHours();
+        a.printOnlyMinutes();
+        // a.printOnlySeconds();
+
+        System.out.println(a.days +" days,"+ a.hours +" hours,"+  a.minutes +" minutes "+  a.seconds +" seconds.");
 
     }
 }
